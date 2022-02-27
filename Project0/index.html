@@ -2,11 +2,36 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            #rcorners2 {
+                border-radius: 5px;
+                border: 2px solid #73AD21;
+                padding: 5px; 
+                width: 500px;
+                height: 10px;  
+            }
+            
+            div.center {
+                position: relative;
+                top: 300px; left: 10px;
+                margin: auto;
+                width: auto;
+                text-align: center;
+                /*line-height: 200px;
+                height: 200px;
+                vertical-align: middle; 
+                padding:70%,70%,0%,70%;           top|right|bottom|left */
+            }
+            
+            </style>
     </head>
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="center">
+            <form action="https://www.google.com/search">
+                <input style="color: blue" id="rcorners2" type="text" name="q" maxlength="70">
+                <br>
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
     </body>
 </html>
