@@ -18,6 +18,13 @@
                 width: auto;
                 text-align: center;
             }
+            div.left {
+                position: relative;
+                top: 100px; left: 10px;
+                margin: auto;
+                width: auto;
+                text-align: left;
+            }
             .button {
                 background-color: #585757; /*Gray*/
                 border: none;
@@ -27,10 +34,12 @@
                 text-decoration: none;
                 display: inline-block;
                 font-size: 16px;
-                margin: 4px 2px;
+                /*margin: 4px 2px;*/
                 cursor: pointer;
             }
             .button1 {border-radius: 4px;} /*curved corners for google search button*/
+            
+
 
             div.right1 {
                 position: absolute;
@@ -44,6 +53,7 @@
                 right: 10px; 
                 text-align: end;
             }
+            
 
             </style>
     </head>
@@ -51,12 +61,55 @@
         <div class="right1">
             <a href="index.html"> <button type="button" class="button button1">Google Search</button></a>
         </div>
-        <div class="center">
-            <form action="https://www.google.com/images">
-                <input id="rcorners2" type="text" name="q" maxlength="70">
+        <!-- btnG=Search
+        Simulates a click on the normal Google results buttpm. 
+        Change to btnI to get the I'm Feeling Lucky button result.
+         -->
+        <div class="left">
+            <table>
+                <th>
+                    Find pages with...
+                </th>
+                <form action="https://www.google.com/search">
+                <tr>
+                    <td><label for="as_q">All these words:</label></td>
+                    <td><input id="rcorners2" type="text" name="as_q" maxlength="70"></td>
+                </tr>
+                <tr>
+                    <td><label for="as_epq">This exact word or phrase:</label></td>
+                    <td><input id="rcorners2" type="text" name="as_q" maxlength="70"></td>
+                </tr>
+                <tr>
+                    <td><label for="as_oq">Any of these words:</label></td>
+                    <td><input id="rcorners2" type="text" name="as_oq" maxlength="70"></td>
+                </tr>
+                <tr>
+                    <td><label for="as_eq">None of these words:</label></td>
+                    <td><input id="rcorners2" type="text" name="as_eq" maxlength="70"></td>
+                </tr>
+                <tr>
+                    <td><input type="hidden" id="btnG" name="btnG" value="Search"></td>
+                    <td align="right"><input class="button button1" type="submit" value="Advanced Search"></td>
+                </tr>
+                </form>
+            </table>
+            <!--
+            <form action="https://www.google.com/search">
+                <label for="as_q">All these words:</label>
+                <input id="rcorners2" type="text" name="as_q" maxlength="70">
                 <br>
-                <input class="button button1" type="submit" value="Image Search">
-            </form>            
+                <label for="as_epq">This exact word or phrase:</label>
+                <input id="rcorners2" type="text" name="as_epq" maxlength="70">
+                <br>
+                <label for="as_oq">Any of these words:</label>
+                <input id="rcorners2" type="text" name="as_oq" maxlength="70">
+                <br>
+                <label for="as_eq">None of these words:</label>
+                <input id="rcorners2" type="text" name="as_eq" maxlength="70">
+                <br>
+                <input type="hidden" id="btnG" name="btnG" value="Search">
+                <input class="button button4" type="submit" value="Advanced Search">
+            </form>            -->
         </div>   
     </body>
 </html>
