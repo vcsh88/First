@@ -31,25 +31,34 @@
                 cursor: pointer;
             }
             .button1 {border-radius: 4px;} /*curved corners for google search button*/
-            .button2 { /*image search*/
-                border-radius: 4px;
-                position: fixed;
-                right: 15%;
             
+            div.right1 {
+                position: absolute;
+                top: 10px;
+                right: 180px; 
+                text-align: end;
             }
-            .button3 { /*advanced search*/
-                border-radius: 4px;
-                position: fixed;
-                right: 5%; 
-            
-            } 
+            div.right2 {
+                position: absolute;
+                top: 10px;
+                right: 10px; 
+                text-align: end;
+            }
             </style>
     </head>
     <body>
-        <a href="imageSearch.html"> <button type="button" class="button button2">Image Search</button></a>
-        <a href="advancedSearch.html"> <button type="button" class="button button3">Advanced Search</button></a>
-        
+        <div class="right1">
+            <a href="imageSearch.html"> <button type="button" class="button button1">Image Search</button></a>
+        </div>
+
+        <div class="right2">
+            <a href="advancedSearch.html"> <button type="button" class="button button1">Advanced Search</button></a>
+        </div>
+
+
         <!--
+                <a href="imageSearch.html"> <button type="button" class="button button2">Image Search</button></a>
+                <a href="advancedSearch.html"> <button type="button" class="button button3">Advanced Search</button></a>
         <button type="button" class="button button2" onclick="alert('Going to Image Search!')">Image Search</button>        
         <button type="button" class="button button3" onclick="alert('Going to Advanced Search!')">Advanced Search</button>        
         -->
