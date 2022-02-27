@@ -22,15 +22,28 @@
                 vertical-align: middle; 
                 padding:70%,70%,0%,70%;           top|right|bottom|left */
             }
-            
+            .button {
+                /*background-color: #4CAF50;  Green */
+                background-color: #585757; color: black; /*Gray*/
+                border: none;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button1 {border-radius: 4px;} /*curved corners for button*/
             </style>
     </head>
     <body>
         <div class="center">
             <form action="https://www.google.com/search">
-                <input style="color: blue" id="rcorners2" type="text" name="q" maxlength="70">
+                <input id="rcorners2" type="text" name="q" maxlength="70">
                 <br>
-                <input type="submit" value="Google Search">
+                <input class="button button1" type="submit" value="Google Search">
             </form>
         </div>
     </body>
