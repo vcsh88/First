@@ -30,10 +30,29 @@
                 margin: 4px 2px;
                 cursor: pointer;
             }
-            .button1 {border-radius: 4px;} /*curved corners for button*/
+            .button1 {border-radius: 4px;} /*curved corners for google search button*/
+            .button2 { /*image search*/
+                border-radius: 4px;
+                position: fixed;
+                right: 15%;
+            
+            }
+            .button3 { /*advanced search*/
+                border-radius: 4px;
+                position: fixed;
+                right: 5%; 
+            
+            } 
             </style>
     </head>
     <body>
+        <a href="imageSearch.html"> <button type="button" class="button button2">Image Search</button></a>
+        <a href="advancedSearch.html"> <button type="button" class="button button3">Advanced Search</button></a>
+        
+        <!--
+        <button type="button" class="button button2" onclick="alert('Going to Image Search!')">Image Search</button>        
+        <button type="button" class="button button3" onclick="alert('Going to Advanced Search!')">Advanced Search</button>        
+        -->
         <div class="center">
             <form action="https://www.google.com/search">
                 <input id="rcorners2" type="text" name="q" maxlength="70">
@@ -41,5 +60,6 @@
                 <input class="button button1" type="submit" value="Google Search">
             </form>
         </div>
+        
     </body>
 </html>
