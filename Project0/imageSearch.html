@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vin's Image Search</title>
+        <style>
+            #rcorners2 {
+                border-radius: 5px;
+                border: 2px solid #73AD21;
+                padding: 5px; 
+                width: 500px;
+                height: 20px;  
+            }
+            
+            div.center {
+                position: relative;
+                top: 300px; left: 10px;
+                margin: auto;
+                width: auto;
+                text-align: center;
+            }
+            .button {
+                background-color: #585757; /*Gray*/
+                border: none;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button1 {border-radius: 4px;} /*curved corners for google search button*/
+            .button2 { /*image search*/
+                border-radius: 4px;
+                position: absolute;
+                right: 15%;
+            
+            }
+            .button3 { /*advanced search*/
+                border-radius: 4px;
+                position: absolute;
+                right: 5%; 
+            
+            } 
+            </style>
+    </head>
+    <body>
+        <button type="button" class="button button2" onclick="alert('Going back to Google Search!')">Google Search</button>        
+        <!--
+        <div class="center">
+            <form action="https://www.google.com/search">
+                <input id="rcorners2" type="text" name="q" maxlength="70">
+                <br>
+                <input class="button button1" type="submit" value="Google Search">
+            </form>
+        </div> --> 
+        <div class="center">
+            <form action="https://www.google.com/webhp">
+                <input id="rcorners2" type="text" name="q" maxlength="70">
+                <br>
+                <input class="button button1" type="submit" value="Image Search">
+            </form>            
+        </div>   
+    </body>
+</html>
