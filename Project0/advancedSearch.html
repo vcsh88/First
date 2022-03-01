@@ -3,13 +3,6 @@
     <head>
         <title>Vin's Advanced Search</title>
         <style>
-            #rcorners2 {
-                border-radius: 0px;
-                border: 2px solid #6c6977;
-                padding: 5px; 
-                width: 500px;
-                height: 20px;  
-            }
             
             div.center {
                 position: relative;
@@ -53,10 +46,37 @@
                 right: 10px; 
                 text-align: end;
             }
+
+                     
+            input[type=text] {
+                background-color: rgb(51, 53, 59);
+                color: white;
+                width: 500px;
+                padding: 5px;
+                height: 20px;
+                /*box-sizing: border-box;*/
+                border: 2px solid #6c6977;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+            }
+
+
+            input[type=text]:focus {
+                border: 3px solid rgb(69, 18, 163);
+            }
             
-            input:focus
+            /*input:focus
             {
-                border: 3px solid #3f2d7c;
+                border: 4px solid #3f2d7c;
+                background-color: rgb(51, 53, 59);
+                color: white;
+            }*/
+            
+            body
+            {
+                background-color: rgb(51, 53, 59);
+                color: white;
             }
             
             </style>
@@ -77,19 +97,19 @@
                 <form action="https://www.google.com/search">
                 <tr>
                     <td><label for="as_q">All these words:</label></td>
-                    <td><input id="rcorners2" type="text" name="as_q" maxlength="70"></td>
+                    <td><input type="text" name="as_q" maxlength="70"></td>
                 </tr>
                 <tr>
                     <td><label for="as_epq">This exact word or phrase:</label></td>
-                    <td><input id="rcorners2" type="text" name="as_q" maxlength="70"></td>
+                    <td><input type="text" name="as_q" maxlength="70"></td>
                 </tr>
                 <tr>
                     <td><label for="as_oq">Any of these words:</label></td>
-                    <td><input id="rcorners2" type="text" name="as_oq" maxlength="70"></td>
+                    <td><input type="text" name="as_oq" maxlength="70"></td>
                 </tr>
                 <tr>
                     <td><label for="as_eq">None of these words:</label></td>
-                    <td><input id="rcorners2" type="text" name="as_eq" maxlength="70"></td>
+                    <td><input type="text" name="as_eq" maxlength="70"></td>
                 </tr>
                 <tr>
                     <td><input type="hidden" id="btnG" name="btnG" value="Search"></td>
