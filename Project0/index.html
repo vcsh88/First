@@ -63,11 +63,27 @@
         <button type="button" class="button button3" onclick="alert('Going to Advanced Search!')">Advanced Search</button>        
         -->
         <div class="center">
-            <form action="https://www.google.com/search">
+
+            <!-- <form action="https://www.google.com/search">
                 <input id="rcorners2" type="text" name="q" maxlength="70">
                 <br>
+                <input type="hidden" id="btnI" name="btnI" value=""> 
                 <input class="button button1" type="submit" value="Google Search">
+                <input class="button button1" type="submit" value="I'm feeling lucky" formaction="https://www.google.com/search?q=your+query&btnI">
+                
+            </form> -->
+
+            <form action="https://google.com/search">
+                <input id="rcorners2" type="text" name="q" maxlength="70">
+                <br>
+                <div>
+                    <input type="submit" name="btnK" value="Google Search" class="button button1">
+                    <input type="submit" name="btnI" value="I am Feeling Lucky" class="button button1">
+                </div>
+                <!-- You need to put a name and a value for your submit button when you have more than one 
+                    in your form because this is how POST requests work.  -->
             </form>
+                
         </div>
         
     </body>
